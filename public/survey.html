@@ -37,7 +37,7 @@
 			</select>
 
 			<h3><b>Question 2</b></h3>
-			<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+			<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 			<select data-placeholder="" class="chosen-select" id="q2" name="">
 				<option value=""></option>
 				<option value="1">1 (Strongly Disagree)</option>
@@ -48,7 +48,7 @@
 			</select>
 
 			<h3><b>Question 3</b></h3>
-			<h4>You find it easy to stay relaxed and focused even when there is some pressure</h4>
+			<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 			<select data-placeholder="" class="chosen-select" id="q3" name="">
 				<option value=""></option>
 				<option value="1">1 (Strongly Disagree)</option>
@@ -59,7 +59,7 @@
 			</select>
 
 			<h3><b>Question 4</b></h3>
-			<h4>You rarely so something just out of sheer curiosity/</h4>
+			<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 			<select data-placeholder="" class="chosen-select" id="q4" name="">
 				<option value=""></option>
 				<option value="1">1 (Strongly Disagree)</option>
@@ -70,7 +70,7 @@
 			</select>
 
 			<h3><b>Question 5</b></h3>
-			<h4>People can rarely upset you.</h4>
+			<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 			<select data-placeholder="" class="chosen-select" id="q5" name="">
 				<option value=""></option>
 				<option value="1">1 (Strongly Disagree)</option>
@@ -81,7 +81,7 @@
 			</select>
 
 			<h3><b>Question 6</b></h3>
-			<h4>It is often difficult for you to relate to other people's feelings.</h4>
+			<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 			<select data-placeholder="" class="chosen-select" id="q6" name="">
 				<option value=""></option>
 				<option value="1">1 (Strongly Disagree)</option>
@@ -92,7 +92,7 @@
 			</select>
 
 			<h3><b>Question 7</b></h3>
-			<h4>In a discussion, truth should be more important than people's sensitivities.</h4>
+			<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 			<select data-placeholder="" class="chosen-select" id="q7" name="">
 				<option value=""></option>
 				<option value="1">1 (Strongly Disagree)</option>
@@ -103,7 +103,7 @@
 			</select>
 
 			<h3><b>Question 8</b></h3>
-			<h4>YYou rarely get carrried away by fantasies and ideas.</h4>
+			<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 			<select data-placeholder="" class="chosen-select" id="q8" name="">
 				<option value=""></option>
 				<option value="1">1 (Strongly Disagree)</option>
@@ -114,7 +114,7 @@
 			</select>
 
 			<h3><b>Question 9</b></h3>
-			<h4>You think that everyone's views should be respected regardless if they are supported by facts.</h4>
+			<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 			<select data-placeholder="" class="chosen-select" id="q9" name="">
 				<option value=""></option>
 				<option value="1">1 (Strongly Disagree)</option>
@@ -125,7 +125,7 @@
 			</select>
 
 			<h3><b>Question 10</b></h3>
-			<h4>You feel more energetic after spending time with a group of people.</h4>
+			<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 			<select data-placeholder="" class="chosen-select" id="q10" name="">
 				<option value=""></option>
 				<option value="1">1 (Strongly Disagree)</option>
@@ -166,55 +166,9 @@
 					</div>
 
 				</div>
+
 			</div>
-		<script type="text/javascript">
 
-			$("#submit").on("click", function(){
-
-				function validateForm(){
-					var isValid = true;
-					$(".form-control").each(function() {
-						if ($(this).val() == ""){
-							isValid = false;
-						}
-					});
-					return isValid;
-				}
-
-				if(validateForm()) {
-
-					var userData = {
-						name: $("#name").val(),
-						photo: $("#photo").val(),
-						scores: [
-							$("#q1").val(),
-							$("#q2").val(),
-							$("#q3").val(),
-							$("#q4").val(),
-							$("#q5").val(),
-							$("#q6").val(),
-							$("#q7").val(),
-							$("#q8").val(),
-							$("#q9").val(),
-							$("#q10").val(),
-						]
-					};
-
-					var currentURL = window.location.origin;
-
-					$.post(currentURL + "/api/friends", userData, function(data){
-
-						$("#resultsModal").modal("toggle");
-						alert("working");
-
-					});
-				}
-				else {
-					alert("Please fill out all fields before submitting!")
-				}
-				return false;
-			});
-
-		</script>
+		</div>
 	</body>
 </html>
