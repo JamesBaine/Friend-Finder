@@ -1,6 +1,22 @@
 var friends = [
 
 	{
+		"name":"Ahmed",
+		"photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+		"scores":[
+			5,
+			1,
+			4,
+			4,
+			5,
+			1,
+			2,
+			5,
+			4,
+			1
+		]
+	},
+	{
 		name: "Seymour Butts",
 		photo: "http://lorempixel.com/output/sports-q-c-400-400-5.jpg",
 		scores: [
@@ -31,7 +47,7 @@ var friends = [
 			"5"
 		]
 	},{
-		name: "Mike Hunt",
+		name: "Joe Schmoe",
 		photo: "http://lorempixel.com/output/fashion-q-c-400-400-9.jpg",
 		scores: [
 			"4",
