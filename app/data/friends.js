@@ -32,7 +32,7 @@ var friends = [
 			"5"
 		]
 	},{
-		name: "Suq Madiq",
+		name: "Rick James",
 		photo: "http://lorempixel.com/output/food-q-c-400-400-10.jpg",
 		scores: [
 			"3",
